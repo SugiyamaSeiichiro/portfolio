@@ -1,0 +1,77 @@
+#mydata{
+    margin: 5px 0;
+}
+#mydata p{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 8px;
+}
+#mydata p span{
+    font-size: 12px;
+    margin-left: 10px;
+}
+#mydata dl{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    font-weight: normal;
+    font-size: 14px;
+    width: 280px;
+    margin: 0 8px;
+}
+#mydata dl dd::before{
+    content: '／';
+}
+header nav ul{
+    display: flex;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+header nav li{
+    list-style: none;
+    border: 1px solid;
+    border-color: white;
+}
+header nav ul li{
+    padding: 20px 0px 20px 0px;
+    font-size: 14px;
+    width: 33.3%;
+    background-color:steelblue;
+    text-align: center;
+}
+header nav ul li a{
+    color: white;
+}
+.no_link{
+    color: white;
+    background-color: blue;
+}
+#mydata dl dt{
+    width: 30%;
+}
+#mydata dl dd{
+    width: 70%;
+    margin: 0;
+}
+
+@media screen and (min-width: 960px) {
+    #mydata{
+        display: flex;
+        justify-content: center;
+    }
+    #mydata p{
+        font-size: 32px;
+    }
+    #mydata p span{
+        font-size: 16px;
+        margin-left: 20px;
+    }
+    #mydata dl{
+        margin-left: 40px;
+        font-size: 16px;
+        width: 320px;
+    }
+    header nav ul li{
+        font-size: 16px;
+    }
+}
